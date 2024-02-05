@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform Architecture and Infrastructure</title>
+    
+
+    <style>
+      body {
+          background-image: url('img/background5.jpg');
+          background-size: cover; 
+          color: #333; 
+          font-family: Arial, sans-serif; 
+      }
+
+      
+      div {
+          width: 950px;
+          margin: 40px auto;
+          background-color: #FFFFFF;
+          opacity: 0.8;
+          padding: 20px;
+          border-radius: 10px;
+      }
+
+      h1 {
+        color: #333;
+        font-size: 20px;
+      }
+
+      p {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+      }
+
+      .big{
+        color: black;
+        font-size: 16px;
+
+      }
+
+      .blue {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+
+      }
+
+      .pink{
+        color: rgb(197, 75, 112);
+        font-size: 16px; 
+      }
+
+      li {
+        color: rgb(53, 36, 25); 
+        font-size: 14px;
+      }
+
+    </style>
+ 
+  </head>
+  <body>
+    <div>
+      
+      <h1>Communication between computer and user</h1>
+      <p class="pink">
+        What happens when you type an URL in a browser: 
+      </p>
+      <ul>
+          <li>type URL</li>
+          <li>Browser looks up IP in cache -> DNS CACHE</li>
+          <li>Browser looks up IP using recursive DNS Lookup</li>
+          <li>Browser establishes TCP connection with server</li>
+          <li>Browser sends a http to server</li>
+          <li>Server sends back http response</li>
+          <li>Browser renders http connection</li>
+      </ul>
+
+      
+
+    </div>
+    <div>
+      
+      <h1>Client</h1>
+      
+      <p class="blue">
+        software application, a web browser or any device that initiates a request to the server 
+      </p>
+
+      <h1>Server</h1>
+
+      <p class="blue">
+        responsible for processing and fulfilling client requests
+      </p>
+
+      <h1>Domain Name</h1>
+      <p class= "blue">
+        Allows users to access websites using memorable names instead of IP adresses
+      </p>
+
+
+    </div>
+    <div>
+      <h1>HTTP Methods</h1>
+      <li>POST</li>
+      <li>GET</li>
+      <li>PUT</li>
+      <li>DELETE</li>
+
+    </div>
+  </body>
+</html>

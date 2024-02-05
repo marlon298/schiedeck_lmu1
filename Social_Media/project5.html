@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Storage and Databases</title>
+
+    <style>
+        body {
+            background-image: url('img/background7.jpg');
+            background-size: cover;
+            color: #333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        div {
+            width: 950px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            opacity: 0.8;
+            padding: 20px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 22px;
+        }
+
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        .big {
+            color: black;
+            font-size: 22px;
+        }
+
+        .blue {
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+        }
+
+        .pink {
+            color: rgb(26, 95, 160);
+            font-size: 20px;
+        }
+
+        li {
+            color: rgb(53, 36, 25);
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+<body>
+
+  <div class="header">
+      <h1>Data Storage and databases</h1>
+
+  </div>
+
+  <div>
+
+    <h1>Data Storage</h1>
+    <p class="pink">
+     Data storage refers to the process of storing and organizing digital information for later use. It involves the use of various devices and technologies to hold and retain data. Common forms of data storage include hard drives, solid-state drives, magnetic tapes, optical discs, and more. The capacity, speed, and durability of different storage media vary, and the choice depends on factors such as the type of data, access requirements, and cost considerations.
+    </p>
+
+    <h1>Databases</h1>
+    <p class="pink"> 
+      Databases are organized collections of data that are structured and stored in a way that allows for efficient retrieval, management, and updating. They are crucial for managing large volumes of structured and unstructured data. Databases use a schema to define the structure of the data and support querying, indexing, and transaction processing. There are various types of databases, including relational databases (e.g., MySQL, PostgreSQL), NoSQL databases (e.g., MongoDB, Cassandra), and in-memory databases (e.g., Redis), each designed to address specific data management needs. Databases play a vital role in applications ranging from simple websites to complex enterprise systems, enabling efficient data handling and retrieval.
+    </p>
+
+  <div>
+
+ </div>
+  <h1>ACID</h1>
+  <p class="pink">
+    In computer science, ACID (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, and other mishaps. In the context of databases, a sequence of database operations that satisfies the ACID properties (which can be perceived as a single logical operation on the data) is called a transaction. For example, a transfer of funds from one bank account to another, even involving multiple changes such as debiting one account and crediting another, is a single transaction.
+
+  </p>
+  <p class="blue">Atomicity</p>
+  <li>guarantees that each transaction is treated as a single "unit", which either succeeds completely or fails completely: if any of the statements constituting a transaction fails to complete, the entire transaction fails and the database is left unchanged.</li>
+  <li></li>
+
+  <p class="blue">Consistency</p>
+  <li>ensures that a transaction can only bring the database from one consistent state to another, preserving database invariants: any data written to the database must be valid according to all defined rules, including constraints, cascades, triggers, and any combination thereof</li>
+  <li>This prevents database corruption by an illegal transaction</li>
+
+  <p class="blue">Isolation</p>
+  <li>Isolation ensures that concurrent execution of transactions leaves the database in the same state that would have been obtained if the transactions were executed sequentially</li>
+
+  <p class="blue">Durability</p>
+  <li>Durability guarantees that once a transaction has been committed, it will remain committed even in the case of a system failure</li>
+  
+    
+</body>
+</html>
